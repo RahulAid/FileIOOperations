@@ -44,5 +44,17 @@ namespace FileIOOperations
             Console.ReadLine();
         }
 
+        public void CopyPath()
+        {
+            Console.WriteLine("\n-----------Copy File Path------------");
+            string filePath = @"D:\BridgeLabzz\FileIOOperations\WordFile1.txt";
+            string copyFilePath = @"D:\BridgeLabzz\FileIOOperations\WordFile2.txt";
+            File.Copy(filePath, copyFilePath);
+            Console.WriteLine("\nCopied Successfully");
+            string copiedText;
+            copiedText = File.ReadAllText(copyFilePath);
+            Console.WriteLine(copiedText);
+        }
+
     }
 }
