@@ -9,6 +9,8 @@
             Operations obj = new Operations();
             obj.FileExists();
             obj.ReadAllLines();
+            obj.ReadAllText();
+
         }
     }
 }

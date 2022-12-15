@@ -34,5 +34,15 @@ namespace FileIOOperations
             Console.ReadLine();
         }
 
+        public void ReadAllText()
+        {
+            Console.WriteLine("\n-------------Read All Text------------\n");
+            string filePath = @"D:\BridgeLabzz\FileIOOperations\WordFile1.txt";
+            string text;
+            text = File.ReadAllText(filePath);
+            Console.WriteLine(text);
+            Console.ReadLine();
+        }
+
     }
 }
