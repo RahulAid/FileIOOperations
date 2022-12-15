@@ -19,5 +19,19 @@ namespace FileIOOperations
                 Console.WriteLine(File.ReadAllText(filePath));
             }
         }
+
+        public void StreamReaderOperation()
+        {
+            Console.WriteLine("\n------------Stream Reader----------\n");
+            string filePath = @"D:\BridgeLabzz\FileIOOperations\WordFile1.txt";
+            using (StreamReader sr = File.OpenText(filePath))
+            {
+                string s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+            }
+        }
     }
 }

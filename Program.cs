@@ -15,6 +15,7 @@
 
             StreamReaderWriterClass objStream = new StreamReaderWriterClass();
             objStream.StreamWriterOperation();
+            objStream.StreamReaderOperation();
         }
     }
 }
