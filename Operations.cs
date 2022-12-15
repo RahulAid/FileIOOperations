@@ -56,5 +56,14 @@ namespace FileIOOperations
             Console.WriteLine(copiedText);
         }
 
+        public void DeletePath()
+        {
+            Console.WriteLine("\n-----------Delete File Path------------");
+            string copyFilePath = @"D:\BridgeLabzz\FileIOOperations\WordFile2.txt";
+            File.Delete(copyFilePath);
+            Console.WriteLine("\nDeleted Successfully");
+        }
+        
+
     }
 }
